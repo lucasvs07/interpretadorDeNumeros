@@ -25,20 +25,20 @@ namespace interpretadorDeNumeros.ConsoleApp
             string linha2 = "";
             string linha3 = "";
 
-            int contador = 0;
+            
             int leitorString = 4;
 
             for (int i = 0; i < primeiraCharLinha.Length; i = i + 4)
             {
-                for (int j = contador; j < leitorString; j++)
+                for (int j = 0; j < leitorString; j++)
                 {
                     linha1 = Convert.ToString(primeiraCharLinha[j]);
                     linha2 = Convert.ToString(segundaCharLinha[j]);
                     linha3 = Convert.ToString(terceiraCharLinha[j]);
-                    linha1 += "";
+                    /*linha1 += "";
                     linha2 += "";
-                    linha3 += "";
-                    contador++;
+                    linha3 += "";*/
+                    
                 }
                 if (linha1 == "    " && linha2 == "  | " && linha3 == "  | ")
                 {
